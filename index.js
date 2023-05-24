@@ -30,6 +30,7 @@ const unknownEndpoint = (request,response) => {
 }
 
 //takes the JSON data of a request, transforms it into a JavaScript object and then attaches it to the body property of the request object 
+app.use(express.static('build'))
 app.use(cors())
 app.use(express.json())
 app.use(requestLogger)
