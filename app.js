@@ -7,10 +7,12 @@ const app = express()
 const cors = require('cors')
 const notesRouter = require('./controllers/notes')
 const mongoose  = require('mongoose')
+require('express-async-errors')
 
 mongoose.set('strictQuery', false)
 
 logger.info('connecting to', config.MONGODB_URI)
+
 
 mongoose.connect(config.MONGODB_URI)
 	.then(()=> {
