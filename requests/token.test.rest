@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/notes
+Content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJhYiIsImlkIjoiNjQ4NWI1MmVhNzU1NjY3YmU4ZGFlODk4IiwiaWF0IjoxNjg2NTkxOTQ1fQ.8VpNrwgSkJ_4ss-ERKnO9nj_DwnTlfhmyyJc9wQUiig
+
+{
+    "content":"babi added a note",
+    "important":true
+}
